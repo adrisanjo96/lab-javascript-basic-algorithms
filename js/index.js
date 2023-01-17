@@ -38,6 +38,8 @@ for (let i = 0; i < hacker1.length; i++){
 }
 console.log(space)
 
+
+
 let opposite = ""
 
 for (let i = hacker1.length - 1; i >= 0; i--){
@@ -49,9 +51,6 @@ console.log (opposite)
 
 
 
-let lowHacker1 = hacker1.toLowerCase();
-let lowHacker2 = hacker2.toLowerCase();
-
 if (hacker1 > hacker2){
     console.log("Yo, the navigator goes first definitely.The driver's name goes first.")
 } else if (hacker1 < hacker2){
@@ -60,5 +59,21 @@ if (hacker1 > hacker2){
     console.log("What?! You both have the same name?")
 }
 
+
+//Bonus 1
+
+let counter = 0
+let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+for (let i = 0; i < longText.length; i++){
+    if (longText [i] === "et"){
+        counter = counter + 1
+    }
+}
+console.log(counter)
 
 
